@@ -40,7 +40,7 @@
             string hex=“0123456789abcdef”,res="";
             while(num&&res.size()<8)
             {
-                ans=hex[num&0xf]+res;
+                res=hex[num&0xf]+res;
                 num>>=4;
             }
             return res;
