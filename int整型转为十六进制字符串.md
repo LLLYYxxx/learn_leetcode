@@ -38,7 +38,7 @@
         string toHex(int num) {
             if(num==0) return "0";
             string hex=“0123456789abcdef”,res="";
-            while(num&&ans.size()<8)
+            while(num&&res.size()<8)
             {
                 ans=hex[num&0xf]+res;
                 num>>=4;
@@ -75,3 +75,4 @@
         res=res.substr(j,res.size());
         return res;
   }
+
